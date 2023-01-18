@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_bar_return_to_map"
+        android:icon="@drawable/ic_map"
+        android:title="@string/map_fragment"
+        />
+    <!--app:showAsAction="withText"-->
+    <item
+        android:id="@+id/nav_bar_accident_list_fragment_button"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        android:title="@string/accident_list_title"
+        />
+    <!--app:showAsAction="withText"-->
+    <!--    <item android:id="@+id/fab_my_event"-->
+    <!--        android:icon="@drawable/ic_baseline_my_location_24"-->
+    <!--        android:title="@string/gps_marker_button"/>-->
+
+    <item
+        android:id="@+id/nav_bar_fab_my_setting_button"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/gps_my_setting_button"
+        />
+    <!--app:showAsAction="withText"-->
+</menu>

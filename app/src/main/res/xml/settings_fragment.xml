@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:key="Prefs">
+
+    <PreferenceCategory
+        app:allowDividerBelow="true"
+        app:persistent="false"
+        app:summary="@string/account_summary"
+        app:title="@string/account_title">
+
+        <Preference
+            app:icon="@drawable/ic_baseline_account_circle_24"
+            app:key="user"
+            app:summary=""
+            app:title="@string/user_tittle" />
+
+        <Preference
+            app:key="signOut"
+            app:title="@string/user_tittle_out" />
+
+    </PreferenceCategory>
+
+    <DropDownPreference
+        app:entries="@array/mapTypes"
+        app:entryValues="@array/mapTypes"
+        app:key="MapType"
+        app:selectable="true"
+        app:title="@string/map_chose_tittle">
+
+    </DropDownPreference>
+
+    <EditTextPreference
+        android:inputType="phone"
+        android:key="EditTextPhone"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/message_sos_phone_edit"
+        app:enableCopying="true"
+        app:icon="@drawable/ic_baseline_perm_phone_msg_24"
+        app:isPreferenceVisible="true"
+        />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="true"
+        app:key="tileScaleToDPI"
+        app:title="@string/scale_to_dpi" />
+
+
+</PreferenceScreen>

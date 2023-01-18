@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SquareFAB" parent="">
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="SquareFABmyLocation" parent="">
+        <item name="cornerSize">10dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+    <!--Стили для infoWindow-->
+    <style name="InfoWindowText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/text_info_win_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/text_info_win_margin_end</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="InfoWindowText.Header">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="InfoWindowText.LineText">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="InfoWindowText.LineText.Notes">
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="ButtonInfoWindow">
+        <item name="android:layout_width">@dimen/button_edit_width</item>
+        <item name="android:layout_height">@dimen/button_edit_height</item>
+        <item name="android:layout_marginStart">@dimen/button_info_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/button_info_margin_end</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:backgroundTint">@android:color/darker_gray</item>
+    </style>
+
+    <style name="ButtonInfoWindow.RightButton">
+        <item name="android:layout_marginEnd">10dp</item>
+    </style>
+    <style name="SpaceInfoWindow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <!--Стили для окна редактирования-->
+    <style name="EditInfoWindow">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/text_edit_win_margin_start</item>
+        <item name="android:layout_marginVertical">@dimen/text_margin_vertical</item>
+    </style>
+
+    <style name="EditInfoWindow.Header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginEnd">@dimen/text_edit_win_margin_end</item>
+        <item name="android:layout_marginVertical">@dimen/text_margin_vertical_header</item>
+        <item name="android:textSize">@dimen/text_size_win_edit_info_header</item>
+        <!--<item name="android:textColor">@color/black</item>-->
+    </style>
+
+    <style name="EditInfoWindow.Header.Small">
+        <item name="android:layout_marginVertical">@dimen/text_margin_vertical</item>
+        <item name="android:textSize">@dimen/text_size_win_edit_info</item>
+    </style>
+
+    <style name="EditInfoWindow.LineText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/text_edit_win_margin_end</item>
+        <item name="android:textSize">@dimen/text_size_win_edit_info</item>
+    </style>
+
+    <style name="EditInfoWindow.SpinnerChoice">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/text_edit_win_margin_end</item>
+    </style>
+
+    <style name="EditInfoWindow.LineTextLeft">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_win_edit_info</item>
+    </style>
+
+    <style name="EditInfoWindow.EditNote">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginEnd">@dimen/text_edit_win_margin_end</item>
+        <item name="android:textSize">@dimen/text_size_win_edit_note</item>
+        <item name="android:layout_marginVertical">0dp</item>
+        <!--<item name="android:layout_marginStart">0dp</item>-->
+        <item name="android:maxLength">400</item>
+    </style>
+
+    <style name="ButtonEditWindow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/button_edit_margin_bottom</item>
+    </style>
+</resources>

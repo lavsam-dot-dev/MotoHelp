@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "172350772322",
+    "firebase_url": "https://moto112-45b33-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "moto112-45b33",
+    "storage_bucket": "moto112-45b33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172350772322:android:7160e1b1323c73a6216d3b",
+        "android_client_info": {
+          "package_name": "ru.motohelp.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172350772322-kgtco7b0sqb4r5c0q3l4ukd7vhqf60tk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.motohelp.app",
+            "certificate_hash": "5ee59657478d4a5505c27dca0fc9ed1bf79d7375"
+          }
+        },
+        {
+          "client_id": "172350772322-39ttm22ckudr7u051cq6npfodg05hqsg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAv9Y5QF7hfBDo57J0NdnNTYjIYRTztdI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "172350772322-39ttm22ckudr7u051cq6npfodg05hqsg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

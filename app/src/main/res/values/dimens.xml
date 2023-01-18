@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="fab_event_margin">20dp</dimen>
+    <dimen name="fab_setting_margin">20dp</dimen>
+    <dimen name="speed_text_margin">5dp</dimen>
+    <dimen name="tv_speed_text">50sp</dimen>
+
+    <!-- Overriding sizes of the FAB (Normal (56dp) Mini (40dp)) -->
+    <dimen name="design_fab_size_normal" tools:override="true">96dp</dimen>
+    <dimen name="design_fab_size_mini" tools:override="true">56dp</dimen>
+    <!--    Данные для быстрых кнопок-->
+    <dimen name="name_button_marker_text">18sp</dimen>
+    <dimen name="fab_button_marker_margin_add">2dp</dimen>
+    <dimen name="fab_button_marker_margin_current_position">10dp</dimen>
+    <dimen name="fab_button_marker_margin">4dp</dimen>
+    <dimen name="icon_size_button_add_marker">80dp</dimen>
+    <dimen name="icon_size_button_current_position">24dp</dimen>
+    <dimen name="icon_size_button_add_marker_landscape">64dp</dimen>
+    <dimen name="icon_size_button_marker">96dp</dimen>
+    <dimen name="icon_size_button_marker_landscape">52dp</dimen>
+    <dimen name="fab_stroke_width">1dp</dimen>
+    <dimen name="fab_alpha">0.8</dimen>
+    <!--Данные для infoWindow и его редактирования-->
+    <dimen name="button_info_win_margin_start_block">15dp</dimen>
+    <dimen name="button_info_win_margin_end_block">20dp</dimen>
+    <dimen name="button_info_margin_start">10dp</dimen>
+    <dimen name="button_info_margin_end">5dp</dimen>
+    <dimen name="text_info_win_margin_start">5dp</dimen>
+    <dimen name="text_info_win_margin_end">5dp</dimen>
+    <dimen name="text_edit_win_margin_start">10dp</dimen>
+    <dimen name="text_edit_win_margin_end">10dp</dimen>
+    <dimen name="text_size_win_edit_info">16sp</dimen>
+    <dimen name="text_size_win_edit_note">17sp</dimen>
+    <dimen name="text_size_win_edit_info_header">18sp</dimen>
+    <dimen name="text_margin_vertical">8dp</dimen>
+    <dimen name="text_margin_vertical_header">8dp</dimen>
+    <dimen name="button_edit_margin_bottom">10dp</dimen>
+    <dimen name="button_edit_width">84dp</dimen>
+    <dimen name="button_edit_height">54dp</dimen>
+    <dimen name="radius_edit_win_note">8dp</dimen>
+    <dimen name="icon_width_stroke">25</dimen>
+    <!--Данные для окна "Без происшествий"-->
+    <dimen name="no_events_margin">10dp</dimen>
+    <dimen name="no_events_text_size">18sp</dimen>
+    <dimen name="no_events_min_height">100dp</dimen>
+
+</resources>

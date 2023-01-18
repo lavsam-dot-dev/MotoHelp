@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recycler_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/con_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tw_event_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Дата/Время" />
+
+        <TextView
+            android:id="@+id/tw_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tw_event_time"
+            tools:text="Адрес ДТП" />
+
+        <TextView
+            android:id="@+id/tw_label_what_happened"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/what_happened_info_window"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tw_address"
+            tools:text="Что случилось:" />
+
+        <TextView
+            android:id="@+id/tw_what_happened"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tw_label_what_happened"
+            tools:text="Что произошло" />
+
+        <TextView
+            android:id="@+id/tw_label_aftermath_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/aftermath_info_frag"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tw_what_happened"
+            tools:text="Последствия:" />
+
+        <TextView
+            android:id="@+id/tw_aftermath_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/tw_label_aftermath_info"
+            app:layout_constraintStart_toEndOf="@+id/tw_label_aftermath_info"
+            app:layout_constraintTop_toTopOf="@+id/tw_label_aftermath_info"
+            tools:text="Последствия" />
+
+        <TextView
+            android:id="@+id/tw_note"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tw_label_aftermath_info" />
+
+        <ImageView
+            android:id="@+id/image_view_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tw_note"
+            app:srcCompat="@drawable/ic_baseline_share_24" />
+
+        <ImageView
+            android:id="@+id/image_view_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/image_view_share"
+            app:layout_constraintTop_toBottomOf="@id/tw_note"
+            app:srcCompat="@drawable/motorbike_24" />
+
+        <ImageView
+            android:id="@+id/image_view_go_to_marker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="8dp"
+            android:alpha="0.3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/image_view_help"
+            app:layout_constraintTop_toBottomOf="@id/tw_note"
+            app:srcCompat="@drawable/ic_baseline_share_location_24" />
+
+        <ImageView
+            android:id="@+id/image_view_ambulance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tw_note"
+            app:srcCompat="@drawable/ic_baseline_add_alert_24_grey" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
+

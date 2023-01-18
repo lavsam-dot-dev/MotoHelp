@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#F4511E</color>
+    <color name="while_50">#80FFFFFF</color>
+    <color name="green">#43A047</color>
+    <color name="yellow">#FFB300</color>
+    <!--    цвета кнопок быстрого маркера-->
+    <color name="icon_tint_fab">#00FFFFFF</color>
+    <color name="icon_background_tint_fab">#40CDD3F3</color>
+    <color name="info_fragment_edit_background">#EDEDEF</color>
+    <!--цвет иконки при помощи-->
+    <color name="accident_icon_help">#aaff56</color>
+    <!--цвет кнопки - помощь в пути-->
+    <color name="accident_go_button">#71DC76</color>
+    <!-- цвета карточек списка ДТП-->
+    <color name="card_accident">#5CFFB300</color>
+    <color name="card_breakdown">#5C9C9C9C</color>
+    <color name="card_ambulance">#6BD81B60</color>
+    <color name="fab_color_SOS">#80E53935</color>
+
+</resources>

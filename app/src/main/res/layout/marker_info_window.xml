@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/info_window_id"
+    android:background="@drawable/shape_info_window"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/address_event"
+        style="@style/InfoWindowText.Header"
+        tools:text="Address of event point" />
+
+    <TextView
+        android:id="@+id/service_info"
+        style="@style/InfoWindowText.LineText"
+        tools:text="Technical information" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/accident_desc_text"
+            style="@style/InfoWindowText.LineText"
+            android:text="@string/what_happened_info_window" />
+
+        <TextView
+            android:id="@+id/accident_desc_info"
+            style="@style/InfoWindowText.LineText"
+            tools:text="столкновение с авто" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/severity_accident_text"
+            style="@style/InfoWindowText.LineText"
+            android:text="@string/aftermath_info_window" />
+
+        <TextView
+            android:id="@+id/severity_accident_info"
+            style="@style/InfoWindowText.LineText"
+            tools:text="ушибы" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/call_ambulance_car_text"
+            style="@style/InfoWindowText.LineText"
+            android:text="@string/call_ambulance_info_window" />
+
+        <TextView
+            android:id="@+id/call_ambulance_car_info"
+            style="@style/InfoWindowText.LineText"
+            tools:text="Нет" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/note_accident_text"
+        style="@style/InfoWindowText.LineText"
+        android:text="@string/note_info_window" />
+
+    <TextView
+        android:id="@+id/note_accident_info"
+        style="@style/InfoWindowText.LineText.Notes"
+        tools:text="Волшебный пересказ" />
+
+    <Space style="@style/SpaceInfoWindow" />
+
+    <TextView
+        android:id="@+id/help_banner"
+        style="@style/InfoWindowText.LineText"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:text="@string/help_on_road" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/button_info_win_margin_start_block"
+        android:layout_marginEnd="@dimen/button_info_win_margin_end_block"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/help_go_button"
+            style="@style/ButtonInfoWindow"
+            android:src="@drawable/motorbike_32" />
+
+        <ImageButton
+            android:id="@+id/edit_button"
+            style="@style/ButtonInfoWindow"
+            android:src="@drawable/ic_edit_info_24" />
+
+        <ImageButton
+            android:id="@+id/delete_button"
+            style="@style/ButtonInfoWindow.RightButton"
+            android:src="@drawable/ic_delete_forever_24" />
+    </LinearLayout>
+</LinearLayout>

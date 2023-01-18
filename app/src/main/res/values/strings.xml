@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">MotoHelp</string>
+    <string name="accident_list_title">Accident List</string>
+    <string name="gps_my_setting_button">Setting</string>
+    <!--<string name="init_check_location_settings_message_ok">Settings Location IS OK</string>-->
+    <string name="init_check_location_settings_message_ok">Settings is OK</string>
+    <string name="map_fragment">Map</string>
+    <!--Для окон маркера-->
+    <string name="add_marker">add an accident</string>
+    <string name="name_breakdown">breakdown</string>
+    <string name="name_crash">accident</string>
+    <string name="name_help">ambulance</string>
+    <string name="what_happened_info_window">What happened:</string>
+    <string name="what_happened_info_frag">What happened in the accident:</string>
+    <string name="aftermath_info_window">After effects</string>
+    <string name="aftermath_info_frag">After effects</string>
+    <string name="call_ambulance_info_window">An Ambulance was called:</string>
+    <string name="call_ambulance_info_frag">An Ambulance was called:</string>
+    <string name="note_info_window">Description:</string>
+    <string name="note_info_frag">Description:</string>
+    <string name="save_info_frag">Save</string>
+    <string name="cancel_info_frag">Cancel</string>
+    <string name="yes_call_ambulance">Yes</string>
+    <string name="no_call_ambulance">No</string>
+    <string name="help_on_road">Help on the way</string>
+    <string name="text_for_share">Motorcycle accident</string>
+
+    <!--Окно установок (Settings)-->
+    <string name="account_title">Account</string>
+    <string name="account_summary">Your settings</string>
+    <string name="user_tittle">User</string>
+    <string name="user_tittle_out">Log out of registration</string>
+    <string name="map_chose_tittle">Select the card type</string>
+    <string name="scale_to_dpi">Scale in DPI</string>
+
+    <!--Сообщения для отправки sms-->
+    <string name="message_sent">Message send</string>
+    <string name="message_error_sos">You didn\'t specify the phone number in the settings, or you specified it incorrectly</string>
+    <string name="message_sos_phone_edit">SOS: enter the number of your loved one in the format +7xxxxxxxxxx, where +7 is the country code.</string>
+    <string name="sos_text_in_button">SOS</string>
+    <string name="gps_marker_button">Add Marker</string>
+    <string name="add_on_failure_listener">add  call settings</string>
+    <string name="gps_allowed">GPS allowed</string>
+    <string name="i_need_help">I need help</string>
+    <string name="enter_phone_number">Specify the phone number of a loved one in the settings</string>
+    <string name="route_loading_error">Route loading error</string>
+    <string name="date_time">Date/Time:</string>
+
+    <!--потеря связи с geocoder-->
+    <string name="message_error_geocoder">Google Service is temporarily unavailable</string>
+
+    <!--обработка "Что случилось"-->
+    <string name="unknown_accident">Unknown</string>
+    <string name="car_collision">Car collision</string>
+    <string name="hitting_footer">Hitting footer</string>
+    <string name="collision_with_rider">Collision with Rider</string>
+    <string name="loss_of_control">Loss of control</string>
+    <string name="other_accident_description">Other</string>
+
+    <!--Обработка "Последствия"-->
+    <string name="unknown">Unknown</string>
+    <string name="no_injury">No injury</string>
+    <string name="contusion">Contusion</string>
+    <string name="fracture">Fracture</string>
+    <string name="critical_situation">Critical situation</string>
+    <string name="victims">Victims</string>
+    <string name="unknown_severity">Unknown severity</string>
+    <string name="login_failed">Login failed</string>
+
+    <!--Служебные сообщения-->
+    <string name="message_no_accidents">Without Accidents</string>
+    <string name="road_step_number">Step</string>
+</resources>

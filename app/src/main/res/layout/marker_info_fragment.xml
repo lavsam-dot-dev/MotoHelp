@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/info_fragment_edit_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/info_block_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/save_block"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/info_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/address_event_const"
+                    style="@style/EditInfoWindow.Header"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Address of event point" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/service_info_const"
+                    style="@style/EditInfoWindow.Header.Small"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/address_event_const"
+                    tools:text="Technical information" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/accident_desc"
+                    style="@style/EditInfoWindow.LineText"
+                    android:text="@string/what_happened_info_frag"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/service_info_const" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinner_accident_desc_switch"
+                    style="@style/EditInfoWindow.SpinnerChoice"
+                    app:layout_constraintBottom_toTopOf="@+id/severity_accident"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/accident_desc">
+
+                </androidx.appcompat.widget.AppCompatSpinner>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/severity_accident"
+                    style="@style/EditInfoWindow.LineTextLeft"
+                    android:text="@string/aftermath_info_frag"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner_accident_desc_switch" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinner_severity_accident_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/severity_accident"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/severity_accident"
+                    app:layout_constraintTop_toTopOf="@+id/severity_accident">
+
+                </androidx.appcompat.widget.AppCompatSpinner>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/call_ambulance_car"
+                    style="@style/EditInfoWindow.LineTextLeft"
+                    android:text="@string/call_ambulance_info_frag"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/severity_accident" />
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switch_ambulance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/call_ambulance_car"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/call_ambulance_car"
+                    app:layout_constraintTop_toTopOf="@+id/call_ambulance_car" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/note_accident"
+                    style="@style/EditInfoWindow.LineTextLeft"
+                    android:text="@string/note_info_frag"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/call_ambulance_car" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/note_accident_surround"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/text_edit_win_margin_start"
+                    android:layout_marginEnd="@dimen/text_edit_win_margin_end"
+                    app:boxCornerRadiusBottomEnd="@dimen/radius_edit_win_note"
+                    app:boxCornerRadiusBottomStart="@dimen/radius_edit_win_note"
+                    app:boxCornerRadiusTopEnd="@dimen/radius_edit_win_note"
+                    app:boxCornerRadiusTopStart="@dimen/radius_edit_win_note"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="200"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/note_accident">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/note_emotion_accident_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="info_block_scroll" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/save_block"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/help_banner_edit_win"
+            style="@style/EditInfoWindow.LineText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/help_on_road" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_information_button"
+            style="@style/ButtonEditWindow"
+            android:text="@string/save_info_frag"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cancel_information_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/help_banner_edit_win" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancel_information_button"
+            style="@style/ButtonEditWindow"
+            android:text="@string/cancel_info_frag"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/save_information_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ef_current_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_button_marker_margin_current_position"
+        android:alpha="@dimen/fab_alpha"
+        android:ellipsize="middle"
+        android:src="@drawable/ic_baseline_my_location_24"
+        app:backgroundTint="@color/icon_background_tint_fab"
+        app:fabSize="mini"
+        app:iconTint="@color/icon_tint_fab"
+        app:iconTintMode="add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/SquareFABmyLocation"
+        app:strokeColor="@color/white"
+        app:strokeWidth="@dimen/fab_stroke_width"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/ef_SOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_button_marker_margin_current_position"
+        android:alpha="@dimen/fab_alpha"
+        android:ellipsize="middle"
+        android:text="@string/sos_text_in_button"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:backgroundTint="@color/fab_color_SOS"
+        app:fabSize="mini"
+        app:fontFamily="@font/rationale"
+        app:iconTint="@color/icon_tint_fab"
+        app:iconTintMode="add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/SquareFABmyLocation"
+        app:strokeColor="@color/white"
+        app:strokeWidth="@dimen/fab_stroke_width"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/ef_event_marker_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_button_marker_margin_add"
+        android:alpha="@dimen/fab_alpha"
+        android:ellipsize="middle"
+        android:text="@string/add_marker"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="@dimen/name_button_marker_text"
+        app:backgroundTint="@color/icon_background_tint_fab"
+        app:icon="@drawable/ic_baseline_add_location_96black"
+        app:iconGravity="textStart"
+        app:iconSize="@dimen/icon_size_button_add_marker"
+        app:iconTint="@color/icon_tint_fab"
+        app:iconTintMode="add"
+        app:layout_constraintBottom_toBottomOf="@+id/map_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:shapeAppearanceOverlay="@style/SquareFAB"
+        app:strokeColor="@color/white"
+        app:strokeWidth="@dimen/fab_stroke_width" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/ef_accident"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_button_marker_margin"
+        android:alpha="@dimen/fab_alpha"
+        android:ellipsize="middle"
+        android:text="@string/name_crash"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="@dimen/name_button_marker_text"
+        android:visibility="visible"
+        app:backgroundTint="@color/icon_background_tint_fab"
+        app:icon="@drawable/ico_moto_crash_48"
+        app:iconSize="@dimen/icon_size_button_marker"
+        app:iconTint="@color/icon_tint_fab"
+        app:iconTintMode="add"
+        app:layout_constraintBottom_toTopOf="@+id/ef_event_marker_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:shapeAppearanceOverlay="@style/SquareFAB"
+        app:strokeColor="@color/white"
+        app:strokeWidth="@dimen/fab_stroke_width" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/ef_ambulance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_button_marker_margin"
+        android:alpha="@dimen/fab_alpha"
+        android:ellipsize="middle"
+        android:text="@string/name_help"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="@dimen/name_button_marker_text"
+        android:visibility="visible"
+        app:backgroundTint="@color/icon_background_tint_fab"
+        app:icon="@drawable/ico_moto_help_48"
+        app:iconSize="@dimen/icon_size_button_marker"
+        app:iconTint="@color/icon_tint_fab"
+        app:iconTintMode="add"
+        app:layout_constraintBottom_toTopOf="@+id/ef_accident"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:shapeAppearanceOverlay="@style/SquareFAB"
+        app:strokeColor="@color/white"
+        app:strokeWidth="@dimen/fab_stroke_width" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/ef_breakdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_button_marker_margin"
+        android:alpha="@dimen/fab_alpha"
+        android:ellipsize="middle"
+        android:text="@string/name_breakdown"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="@dimen/name_button_marker_text"
+        android:visibility="visible"
+        app:backgroundTint="@color/icon_background_tint_fab"
+        app:icon="@drawable/ico_moto_breakdown_48"
+        app:iconSize="@dimen/icon_size_button_marker"
+        app:iconTint="@color/icon_tint_fab"
+        app:iconTintMode="add"
+        app:layout_constraintBottom_toTopOf="@+id/ef_ambulance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:shapeAppearanceOverlay="@style/SquareFAB"
+        app:strokeColor="@color/white"
+        app:strokeWidth="@dimen/fab_stroke_width" />
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/map_view"
+        tilesource="MAPNIK"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </org.osmdroid.views.MapView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_speed_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/speed_text_margin"
+        android:text="100"
+        android:textSize="@dimen/tv_speed_text"
+        app:fontFamily="@font/rationale"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:text="100" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_debug_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/speed_text_margin"
+        android:text="0.0"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:fontFamily="@font/rationale"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_speed_text"
+        tools:ignore="MissingConstraints"
+        tools:text="lan:\nlon:\nzoom:" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
