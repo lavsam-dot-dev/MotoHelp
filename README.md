@@ -195,12 +195,12 @@
 ## Дополнительная информация
 Для просмотра и редактирования схемы работы приложения и макета используем  [https://app.diagrams.net](https://app.diagrams.net/), открыть с Github по следующим ссылкам:
 
-[https://github.com/vikzak/motohelp/blob/main/scheme_v1.drawio](./scheme_v1.drawio)
+[Схема работы приложения](./scheme_v1.drawio)
 
-[https://github.com/vikzak/motohelp/blob/main/maket.drawio](./maket.drawio)
+[Макет приложения](./maket.drawio)
 
 Документация по проекту:  [https://docs.google.com/document/d/1ibJW3-lc5dMOJIEu5XrHqnL5S3fu-afudGxyldtIvbs/](https://docs.google.com/document/d/1ibJW3-lc5dMOJIEu5XrHqnL5S3fu-afudGxyldtIvbs/)
 
-Схема взаимодействия модулей проекта  [https://github.com/vikzak/motohelp/blob/main/scheme_v1.pdf](./scheme_v1.pdf)  - v.1
+[Схема взаимодействия модулей проекта](./scheme_v1.pdf)  - v.1
 
-Макет приложения  [https://github.com/vikzak/motohelp/blob/main/maket.pdf](./maket.pdf)  - v.1
+[Макет приложения](./maket.pdf)  - v.1
